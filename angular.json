@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "biograf"
+    }
+  },
+  "defaultProject": "biograf",
+  "cli": {
+    "analytics": "9ea1145d-9b40-4d0d-9c21-3c4b32b8107a"
+  }
 }
