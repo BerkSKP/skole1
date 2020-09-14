@@ -1,11 +1,13 @@
 <form [formGroup]="movies" (ngSubmit)="onSubmit()">
   <label>
-      Film name:
-      <input type="text" formControlName="film">
-      <button type = "submit"> Submit</button>
-  </label>
+    Film name:
+    <input type="text" formControlName="film">
+    <button type = "submit"> Submit movie</button>
+    <p> The movie is : {{test1}}</p>
+    <img [src]="url" alt="" width="500">
+    <input type="file" (change) ="selectFile($event)">
+    <button type="submit"> Submit this</button>
+  </label> 
 </form>
-<p> The movie is : {{test1}}</p>
-
-<img [src]="url" alt="" width="500">
-<input type="file" (change) ="selectFile($event)">
+<app-todo>
+</app-todo>

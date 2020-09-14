@@ -29,5 +29,8 @@ export class AppComponent implements OnInit {
         this.url = event.target.result
       }
     }
+    
   }
+  
+
 }
