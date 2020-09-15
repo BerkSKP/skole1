@@ -3,6 +3,7 @@ import { TodoServiceService } from 'src/app/todo-service.service';
 import { Todo } from "src/app/models/todo";
 
 
+
 @Component({
   selector: 'app-todo',
   templateUrl: './todo.component.html',
@@ -10,6 +11,7 @@ import { Todo } from "src/app/models/todo";
 })
 export class TodoComponent implements OnInit {
     todos:Todo[];
+    
   
   constructor(private todoService:TodoServiceService) { }
 
@@ -17,6 +19,7 @@ export class TodoComponent implements OnInit {
     this.todoService.getTodosHttp().subscribe(data=>{this.todos=data
       
     });
+  
     
   }
   
