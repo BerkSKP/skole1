@@ -3,4 +3,5 @@ export class Movie {
     movieName: string;
     movietime:number;
     movieList:string;
+    img:any;
 }
