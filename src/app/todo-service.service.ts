@@ -13,9 +13,8 @@ const httpOptions = {
   providedIn: 'root'
 })
 
-
-
 export class TodoServiceService {
+  
   todos:Todo[];
   movies:Movie[];
   movie:Movie;
@@ -27,9 +26,9 @@ export class TodoServiceService {
   getTodosHttp():Observable<Todo[]>{
     return this.http.get<Todo[]>(this.url)
   }
-  /* getTodosHttp1():Observable<any[]>{
+   getTodosHttp1():Observable<any[]>{
     return this.http.get<any[]>(this.url1)
-  } */
+  } 
 
   postTodosHttp2(movies1:any):Observable<Movie>{
     return this.http.post<Movie>(this.url1,movies1,httpOptions);
